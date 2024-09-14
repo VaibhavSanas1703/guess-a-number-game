@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+
+:root{
+    --primary-color:royalblue;
+    --secondary-color:lightblue;
+    --grey: lightgrey;
+    --bg:#1b1b1b42;
+    --ltr:0.2px;
+    --text-color:#f0f0f0;
+    
+    /* FONT WEIGHT */
+    --normal-fw: 400;
+    --medium-fw: 500;
+    --large-fw: 600;    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #252525;
+    color: #f0f0f0;
+    font-weight: var(--normal-fw);
+    text-align: centere;
+}
+
+h1{
+    font-weight: var(--large-fw);
+}
+
+.game-container{
+    width: 400px;
+    padding: 30px;
+    background: var(--bg);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 50px;
+    border: 0.1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.headings h1{
+    margin-bottom: 5px;
+    font-weight: var(--large-fw);
+}
+
+.inputs{
+    width: 100%;
+}
+
+.inputs input,button{
+    width: 100%;
+    padding: 13px 15px;
+    margin-top: 19px;
+    font-size: 17px;
+    outline: none;
+    border: 0;
+    border-radius: 50px;
+}
+
+.inputs button{
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inputs input{
+    background-color: #0c0c0c3f;
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+::-webkit-inner-spin-button{
+    appearance: none;
+}
+
+input:focus{
+    border-color: rgba(255,255,255,0.3);
+}
+
+button:active{
+    scale: 0.99;
+}
+
+#chences{
+    margin-bottom: 10px;
+}
+
+#error{
+    color: rgb(255, 0, 0);
+    user-select: none;
+}
+
+#restart{
+    display: none;
+}
+
+#result{
+    color: rgb(10, 208, 10);
+}
+
+#hiddenbtn{
+    display: none;
+}
+
+::placeholder{
+    letter-spacing: 0;
+}
+
+@media (max-width:500px){
+    .game-container{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 1.6rem;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    input{
+        font-size: 15px;
+    }
+}
